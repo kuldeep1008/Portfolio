@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <title>Kuldeep | Java Developer</title>
+    <style>
+        * {
+          margin: 0; padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          background: #0e0e15;
+          color: white;
+          line-height: 1.6;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1.2rem 3rem;
+          background: transparent;
+        }
+
+        .navbar a {
+          color: #ccc;
+          text-decoration: none;
+          margin-left: 1.5rem;
+          font-weight: 500;
+          transition: color 0.2s;
+        }
+
+        .navbar a:hover {
+          color: #ffffff;
+        }
+
+        .hero {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          padding: 4rem 3rem;
+        }
+
+        .hero-text {
+          flex: 1 1 50%;
+        }
+
+        .hero-text h1 {
+          font-size: 3rem;
+          color: #ffffff;
+        }
+
+        .hero-text p {
+          font-size: 1rem;
+          color: #cccccc;
+          margin: 1rem 0 2rem;
+          max-width: 500px;
+        }
+
+        .hero-text a.button {
+          background: #007bff;
+          color: white;
+          padding: 0.7rem 1.5rem;
+          text-decoration: none;
+          border-radius: 4px;
+          font-weight: bold;
+        }
+
+        .hero-img {
+          flex: 1 1 40%;
+          text-align: center;
+        }
+
+        .hero-img img {
+          width: 300px;
+          border-radius: 50%;
+          border: 4px solid #007bff;
+          box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .section {
+          padding: 3rem 3rem;
+          background-color: #161622;
+          margin-top: 2rem;
+          border-radius: 10px;
+        }
+
+        .section h2 {
+          color: #ffffff;
+          margin-bottom: 1rem;
+          border-bottom: 2px solid #007bff;
+          display: inline-block;
+          padding-bottom: 0.3rem;
+        }
+
+        .section p, .section li {
+          color: #bbbbbb;
+          font-size: 0.95rem;
+        }
+
+        .section ul {
+          margin-top: 0.5rem;
+          padding-left: 1.2rem;
+        }
+
+        .experience-card, .project {
+          background: #1f1f2e;
+          padding: 1rem;
+          border-radius: 8px;
+          margin: 1rem 0;
+        }
+
+        .project {
+          display: flex;
+          gap: 1rem;
+        }
+
+        .project img {
+          width: 140px;
+          height: 100px;
+          border-radius: 6px;
+          object-fit: cover;
+        }
+
+        .project a {
+          color: #61dafb;
+        }
+
+        .socials {
+          text-align: center;
+          padding: 2rem;
+        }
+
+        .socials a {
+          color: white;
+          margin: 0 0.5rem;
+          font-size: 1.2rem;
+          text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+          .hero {
+            flex-direction: column;
+            text-align: center;
+          }
+
+          .hero-text h1 {
+            font-size: 2.2rem;
+          }
+
+          .hero-img img {
+            width: 220px;
+          }
+
+          .project {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .project img {
+            width: 100%;
+            height: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Software Developer Engineer</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>I’m Kuldeep,<br>a Java Developer</h1>
+        <p>
+            Backend developer skilled in Java, Spring Boot, and REST APIs. Passionate about building clean, efficient, and scalable applications.
+        </p>
+        <a href="./IMAGES/kuldeeppanditRes.pdf" download class="button">Download CV</a>
+
+    </div>
+    <div class="hero-img">
+        <img src="./IMAGES/kuldeep.jpg" alt="Kuldeep's Photo" />
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I'm a backend-focused Java developer who loves crafting scalable APIs and clean architecture using Core Java, Spring Boot, MySQL, MongoDB, HTML, CSS, JS. I enjoy turning complex problems into efficient code and delivering real solutions.</p>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+<section class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Languages: Java, JavaScript</li>
+        <li>Frameworks: Spring Boot, Spring</li>
+        <li>Web: HTML, CSS, JavaScript</li>
+        <li>Databases: MySQL, MongoDB</li>
+        <li>Tools: VS Code, Eclipse, IntelliJ IDEA, GitHub, Maven</li>
+    </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <h3>Software Engineer Intern — Hewlett Packard (Forage)</h3>
+        <p><strong>Jan 2024 – Feb 2024</strong> | Remote</p>
+        <ul>
+            <li>Proposed and designed a RESTful web service to manage employee records.</li>
+            <li>Built a Spring Boot app to process JSON and HTTP requests.</li>
+            <li>Wrote unit tests to ensure application reliability.</li>
+        </ul>
+    </div>
+    <div class="experience-card">
+        <h3>Software Engineer Intern — TechInterex</h3>
+        <p><strong>Nov 2024 – Jan 2025</strong> | Remote</p>
+        <ul>
+            <li>Developed Java apps using Spring Boot, MySQL, and Maven.</li>
+            <li>Built scalable backend services with RESTful architecture.</li>
+            <li><strong>Technologies:</strong> Java, MySQL, Spring Boot, HTML, CSS</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="section">
+    <h2>Certificates & Courses</h2>
+    <ul>
+        <li>Full Stack Web Development (Java) — Ducat Institute</li>
+        <li>Web Development Course — Great Learning</li>
+        <li>Principles of Management — Great Learning</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="portfolio">
+    <h2>Projects</h2>
+    <div class="project">
+        <img src="./IMAGES/WEATHERAPP.jpg" alt="Weather App">
+        <div>
+            <h3>Weather Application</h3>
+            <p>A responsive weather application using Spring Boot and OpenWeatherMap API. Displays real-time weather data. Styled with HTML and CSS.</p>
+            <a href="https://github.com/kuldeep1008/weatherapp" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="project">
+        <img src="./IMAGES/PDFCONV.jpg" alt="PDF Converter Tool">
+        <div>
+            <h3>PDF Converter Tool</h3>
+            <p>Web app to perform operations like merging, converting PDF to Word/Image formats. Built using Spring Boot backend and frontend with HTML/CSS/JS.</p>
+            <a href="https://github.com/kuldeep1008/pdfConverter" target="_blank">View on GitHub</a>
+        </div>
+        <img src="./IMAGES/bankMangemnetSystem.jpg" alt="Bank-Management System">
+        <div>
+            <h3>Bank-Management System</h3>
+            <p>The Banking System is a Java Swing application that simulates basic banking operations. It provides a user-friendly interface for managing accounts, transactions, and other essential banking functions.</p>
+            <a href="https://github.com/kuldeep1008/bank-management" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIALS -->
+<div class="socials" id="contact">
+    <a href="mailto:kdjassu01@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="tel:+91-7082175483" title="Call"><i class="fas fa-phone-alt"></i></a>
+    <a href="https://github.com/kuldeep1008" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/kuldeep-pandit-2b530a250" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+</div>
+
+</body>
+</html>
